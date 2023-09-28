@@ -24,7 +24,9 @@ hr {
 }
 
 video {
-    width: 18.5rem;
+    max-width: 18.5rem;
+    width: 100%;
+    height: auto;
     margin-left: 23rem;
     margin-top: -3.2rem;
 }
@@ -71,10 +73,12 @@ video {
 }
 
 .img-main {
-    width: 23.75rem;
-    height: 31.25rem;
+    max-width: 23.75rem;
+    width: 100%;
+    height: auto;
     margin-top: -5rem;
     margin-left: 43rem;
+
 }
 
 .name-img {
@@ -96,7 +100,7 @@ p.nick {
 .line {
     color: darkgray;
     margin-left: 23.125rem;
-    margin-right: 23.125rem;
+    margin-right: 22rem;
     margin-top: 3rem;
 }
 
@@ -107,6 +111,10 @@ p.nick {
     font-weight: 600;
     font-size: small;
     margin-bottom: 3.125rem;
+    position: absolute;
+    width: 100%;
+    max-width: 100vh;
+    padding: 0 1.5%;
 }
 
 .text-line:hover {
@@ -140,9 +148,9 @@ p.nick {
     }
     
     video {
-        width: 8rem;
-        margin-left: 2.7rem;
-        margin-top: -1.2rem;
+        width: 10rem;
+        margin-left: 2rem;
+        margin-top: -2.8rem;
     }
     
     .more {
@@ -151,6 +159,7 @@ p.nick {
         font-size: 1rem;
         margin-top: -1.5rem;
         margin-left: 3.125rem;
+        text-align: center;
         /* margin-bottom: 3rem; */
     }
     
@@ -180,6 +189,7 @@ p.nick {
         font-weight: 700;
         font-size: 7px;
         margin-top: -1.5rem;
+        font-size: calc(55% - 1px);
         /* margin-bottom: 1rem; */
         margin-left: 2.5rem;
         margin-right: 5rem;
@@ -189,17 +199,17 @@ p.nick {
         width: 8rem;
         height: 15rem;
         object-fit: cover;
-        margin-left: 11.5rem;
+        margin-left: 13rem;
         margin-top: -4rem;
     }
     
     .name-img {
-        margin-left: 3rem;
-        margin-right: 12rem;
-        margin-top: -8.4rem;
+        margin-left: 2rem;
+        margin-right: 13rem;
+        margin-top: -9rem;
         color: darkgray;
         font-weight: 600;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         background-color: black;
         border-radius: 1rem;
         font-size: 0.5rem;
@@ -215,6 +225,7 @@ p.nick {
         margin-left: 2.125rem;
         margin-right: 2.125rem;
         margin-top: 1rem;
+        width: 85%;
     }
     
     .text-line {
@@ -223,6 +234,11 @@ p.nick {
         color: darkgray;
         font-weight: 600;
         font-size: 0.5rem;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        max-width: 100vh;
+        padding: 0 5%;
     }
     
     .text-line:hover {
